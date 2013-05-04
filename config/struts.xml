@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration
+2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <constant name="struts.custom.i18n.resources" value="globalMessages" />
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
+    <constant name="struts.objectFactory.spring.autoWire" value="type" />
+    <constant name="struts.objectFactory.spring.useClassCache" value="false" />
+    <constant name="struts.multipart.maxSize" value="500000000"></constant>  
+    
+    <package name="home" extends="struts-default">
+        <action name="index" class="com.web.front.action.HomeAction" method="index">
+            <result>/pages/front/home.jsp</result>
+        </action>
+        <action name="jypx" class="com.web.front.action.JypxAction" method="index">
+            <result>/pages/front/jypx/index.jsp</result>
+        </action>
+        <action name="xkjs" class="com.web.front.action.XkjsAction" method="index">
+            <result>/pages/front/xkjs/index.jsp</result>
+        </action>
+         <action name="zysc" class="com.web.front.action.ZyscAction" method="index">
+            <result>/pages/front/zysc/index.jsp</result>
+        </action>
+         <action name="ktyj" class="com.web.front.action.KtyjAction" method="index">
+            <result>/pages/front/ktyj/index.jsp</result>
+        </action>
+         <action name="xbkc" class="com.web.front.action.XbkcAction" method="index">
+            <result>/pages/front/xbkc/index.jsp</result>
+        </action>
+         <action name="msgzs" class="com.web.front.action.MsgzsAction" method="index">
+            <result>/pages/front/msgzs/index.jsp</result>
+        </action>
+         <action name="jydt" class="com.web.front.action.JydtAction" method="index">
+            <result>/pages/front/jydt/index.jsp</result>
+        </action>
+         <action name="zcwj" class="com.web.front.action.ZcwjAction" method="index">
+            <result>/pages/front/zcwj/index.jsp</result>
+        </action>
+         <action name="ssxm" class="com.web.front.action.SsxmAction" method="index">
+            <result>/pages/front/ssxm/index.jsp</result>
+        </action>
+    </package>
+    
+    <package name="json" namespace="/" extends="json-default">
+		<action name="uploadAction" class="com.web.front.action.UploadAction"
+			method="uploadify">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+	<include file="struts-wym.xml"></include>
+	<include file="struts-longload.xml"></include>
+	<include file="struts-hw.xml"></include>
+</struts>

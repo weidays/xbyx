@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <package name="jiaoshi" namespace="/back" extends="struts-default">
+   	  <global-results>
+      <result name="homeIndex" type="redirect">
+      	 ../index.aspx
+      </result>
+    	</global-results>
+		<action name="login" class="com.web.back.action.JiaoshiAction" method="login">
+			<result name="success" type="redirect">../index.aspx</result>
+			<result name="input" type="redirect">../index.aspx</result>
+			<result name="loginerror">/pages/loginerror.jsp</result>
+		</action>
+		<action name="logout" class="com.web.back.action.JiaoshiAction" method="logout">
+			<result name="success" type="redirect">../index.aspx</result>
+			<result name="input" type="redirect">../index.aspx</result>
+		</action>
+		<action name="regist" class="com.web.back.action.JiaoshiAction" method="registJiaoshi">
+			<result name="success" type="redirect">../index.aspx</result>
+		</action>
+	</package>
+	 <package name="news" namespace="/" extends="struts-default">
+	 	<global-results>
+      <result name="homeIndex" type="redirect">
+      	 index.aspx
+      </result>
+    	</global-results>
+		<action name="dtDetail" class="com.web.front.action.JydtAction" method="dtDetail">
+			  <result >/pages/front/newsdetail.jsp</result>
+		</action>
+	</package>
+	 <package name="xkz" namespace="/xk" extends="struts-default">
+		 <global-results>
+	      <result name="homeIndex" type="redirect">
+	      	 ../index.aspx
+	      </result>
+	    	</global-results>
+		<action name="jtbk" class="com.web.front.action.xk.BeikeAction" method="toJtbk">
+			<result name="success">/pages/front/xkjs/xkkmz/jtbk.jsp</result>
+		</action>
+		<action name="toBeike" class="com.web.front.action.xk.BeikeAction" method="toBeike">
+			<result name="success">/pages/front/xkjs/xkkmz/beike.jsp</result>
+		</action>
+		<action name="fqBeike" class="com.web.front.action.xk.BeikeAction" method="fqBeike">
+			<result name="success" type="redirect">jtbk.aspx</result>
+		</action>
+		<action name="beikeDetail" class="com.web.front.action.xk.BeikeAction" method="beikeDetail">
+			<result name="success">/pages/front/xkjs/xkkmz/beikedetail.jsp</result>
+		</action>
+		<action name="cyrbeike" class="com.web.front.action.xk.BeikeAction" method="cyrbeike">
+			<result name="success">/pages/front/xkjs/xkkmz/beike_cyr.jsp</result>
+		</action>
+		<action name="cyrFqbeike" class="com.web.front.action.xk.BeikeAction" method="cyrFqbeike">
+			<result name="success">/pages/front/xkjs/xkkmz/beike_cyr.jsp</result>
+		</action>
+	</package>
+   
+    
+</struts>

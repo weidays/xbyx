@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="xk"  extends="struts-default"  namespace="/xk">
+	<action name="index" class="com.web.front.action.xk.XkkmzAction" method="index">
+	<result name="success">/pages/front/xkjs/xkkmz/index.jsp</result>
+	</action>
+	<action name="news" class="com.web.front.action.xk.XkkmzAction" method="news">
+	<result name="success">/pages/front/xkjs/xkkmz/news.jsp</result>
+	</action>
+	<action name="newDetail" class="com.web.front.action.xk.XkkmzAction" method="newDetail">
+	<result name="success">/pages/front/xkjs/xkkmz/newsdetail.jsp</result>
+	</action>
+	<action name="xkbk" class="com.web.front.action.xk.XkkmzAction" method="toXkbk">
+	<result name="success">/pages/front/xkjs/xkkmz/xkbk.jsp</result>
+	</action>
+	<action name="xkbknr" class="com.web.front.action.xk.XkkmzAction" method="xkbknr">
+	<result name="success">/pages/front/xkjs/xkkmz/xkbkdetail.jsp</result>
+	</action>
+	<action name="replay" class="com.web.front.action.xk.XkkmzAction" method="replay">
+	<result name="success">/pages/front/xkjs/xkkmz/replaycontent.jsp</result>
+	</action>
+	<action name="getReplay" class="com.web.front.action.xk.XkkmzAction" method="getReplay">
+	<result name="success">/pages/front/xkjs/xkkmz/replaycontent.jsp</result>
+	</action>
+	<action name="writeBlog" class="com.web.front.action.xk.XkkmzAction" method="writeBlog">
+	</action>
+	<action name="query*" class="com.web.front.action.xk.XkkmzAction" method="query{1}">
+	</action>
+	<action name="save*" class="com.web.front.action.xk.XkkmzAction" method="save{1}">
+	</action>
+	</package>
+	
+
+</struts>
+

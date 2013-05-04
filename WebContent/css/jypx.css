@@ -1,0 +1,123 @@
+body,div,ul {
+	padding: 0;
+	margin: 0;
+}
+
+#container {
+	width: 980px;
+	margin: 0px auto;
+}
+
+.tab {
+	padding: 0;
+	margin: 0;
+}
+
+.tab li {
+	list-style: none;
+	float: left;
+	padding: 0;
+	margin-right: 10px;
+	line-height: 30px;
+	height: 30px;
+	width: 65px;
+	text-align: center;
+}
+
+.content {
+	float: none;
+	padding-top: 30px;
+	border: solid 1px black;
+	clear: both;
+}
+
+.content div {
+	border-top: 0px;
+	height: 60px;
+}
+
+.tab_selected {
+	border-left: solid 1px black;
+	background-color: #ffffff;
+	border-right: solid 1px black;
+	border-top: solid 1px black;
+	border-bottom: 0px;
+	bottom: -1px;
+	position: relative;
+	z-index: 1
+}
+
+.tab_current {
+	text-decoration: underline;
+}
+
+.yy_border {
+	border: 1px solid #ddd;
+}
+.yy_border1 {
+	border: 1px solid #ddd;
+	height:300px;
+	
+}
+.yy_grey {
+	background-color: #ddd;
+}
+
+.yy_title {
+	border-bottom: 1px solid #aaa;
+	background-color: #f2f2f2;
+	background-image: url("img/panel_header.png");
+	height: 25px;
+	text-indent:5px;
+	color:white;
+	margin-bottom: 10px;
+}
+.yy_content{
+	margin-top:10px;
+	margin-left:5px;
+	font-size:12pt;
+	line-height:19pt;
+	
+}
+.yy_content a{color:#333;}
+.yy_top {
+	height: 80px;
+	background: url("../images/header/logo.jpg") no-repeat;
+}
+.js_header{
+	width:33%;
+	margin-top:15px;
+	float:left;
+	text-align: center;
+}
+.js_header_img{
+	height:80px;
+	}
+.new_title{
+	text-align: center;
+	font-size:15pt;
+	font-weight:bold;
+	line-height:19pt;
+	color:#003399;
+}
+.new_title label{text-align: right;color:#949494;margin-top:10px;}
+.new_title p{
+	text-align: left;text-indent:30px; font-size:12pt;
+	font-weight:normal;margin-top:20px;color:#333;
+	line-height:19pt;}
+	
+#editor {
+	max-height: 250px;
+	height: 250px;
+	background-color: white;
+	border-collapse: separate; 
+	border: 1px solid rgb(204, 204, 204); 
+	padding: 4px; 
+	box-sizing: content-box; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset; 
+	box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+	border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px; border-top-left-radius: 3px;
+	overflow: scroll;
+	outline: none;
+}

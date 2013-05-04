@@ -1,0 +1,26 @@
+
+.allBody {margin:0 auto;	width:1022px;height:900px;	position:relative;	background:url("../images/home/all_bg.gif") repeat-y;
+		  padding:0px; overflow:auto;	 text-align:center;text-align: -moz-center !important; }
+.all_content{width:990px; *width:991px;}
+.fn-clear:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+.fn-clear{zoom:1}body .fn-hide{display:none}
+#menu{ height:40px; background-color:#295aa5;width:985px;*width:991px; }
+#menu li{ list-style: none;position:relative; float:left; width:100px; font-weight:700;font-size: 16px; line-height:40px ; background:url(../images/home/s.png) repeat-y right center; text-align:center; z-index:10;}
+#menu li.first-item a{ background:url(../images/home/s.png) repeat-y 0 0;}
+#menu li.current{ background-color:#003a8d}
+#menu li a{ display:block; color:#ffffff;text-decoration:none}
+#menu li a:hover{ background-color:#003a8d;}
+/* 子菜单
+#menu li .submenu{ display:none; position:absolute; left:0; width:100px; padding:5px 15px 0; background-color:#e3f0fe; text-align:left; }
+#menu li .submenu a{ color:#0181CC; border-bottom:1px dotted .ddd; padding:0 0 0 15px; height:32px; font:500 14px/32px 'microsoft yahei'; background:url(../images/home/arr.gif) no-repeat;}
+#menu li .submenu a:hover{ font-weight:500; text-decoration:none; background-position:0 -32px; background-color:none;} 
+*/
+.img_login{width:100%;margin:5 0 0 0px;}
+.index_img{width:700px;height:310px;float:left;}
+.indexlogin{border-style:solid;border-width:5pt; border-color:#f2f2f2;height:205px;width:286px; }
+.label{background-color:#f2f2f2;width:286px;height:34px;}
+.label p{text-align:left;font-family:Arial;font-size:16px;font-weight:bold;font-style:normal;margin:8 0 0 7px;}
+.username{margin-top:6px;}
+.password{margin-top:6px;}
+
+
